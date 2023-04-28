@@ -1,0 +1,86 @@
+.row_menu_card {
+    width: 80px;
+    min-width: 80px;
+    height: 100px;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.row_menu_card:hover, .row_menu_card.active {
+    background: #f8901c;
+}
+
+.row_menu_card .img_box {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 100vw;
+    background: #f8901c;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.row_menu_card:hover .img_box,
+.row_menu_card.active .img_box {
+    background: #fff;
+}
+
+.row_menu_card .img_box img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.row_menu_card:hover .img_box img,
+.row_menu_card.active .img_box img {
+    width: 80%;
+    height: 80%;
+    transition: .5s;
+}
+
+.row_menu_card h3 {
+    color: #f8901c;
+    font-size: 14px;
+    font-weight: 500;
+    transition: .5s;
+}
+.row_menu_card:hover h3,
+.row_menu_card.active h3 {
+    color: #faf9fb;
+}
+
+.row_menu_card .load_menu {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #f8901c;
+    transition: .5s;
+} 
+.row_menu_card:hover .load_menu,
+.row_menu_card.active .load_menu {
+    background: #fff;
+}
+
+.row_menu_card .load_menu .MuiSvgIcon-root {
+    font-size: 18px;
+    color: #faf9fb;
+}
+.row_menu_card:hover .load_menu .MuiSvgIcon-root,
+.row_menu_card.active .load_menu .MuiSvgIcon-root {
+    color: #f8901c;
+}

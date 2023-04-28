@@ -1,0 +1,38 @@
+li {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+}
+
+li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 500;
+  width: 100%;
+}
+
+li a span {
+    position: relative;
+    display: block;
+    line-height: 70px;
+    text-align: center;
+    transition: .5s;
+}
+
+li a span .MuiSvgIcon-root {
+    font-size: 26px;
+    color: #373848;
+}
+
+li.active a span {
+    transform: translateY(-26px);
+}
+li.active a span .MuiSvgIcon-root {
+    color: #faf9fb;
+    transition: .5s;
+}
